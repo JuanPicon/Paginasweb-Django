@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos? - Estantería Martínez</title>
+
+    <link rel="stylesheet" href="{% static '/css/miestilo.css' %}">
+    <link rel="icon" type="image/png" href="{% static '/recursos/logo.jpg ' %}">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id = "irarriba">
+        <div class="imagencontenedor">
+            <img class="crop" src= "{% static 'recursos/estante.jpg' %}"/>
+        </div> <br>
+        <nav>
+        <ul class="clrarfix">
+            <li class="nombre" >
+                Estantería Martínez
+            </li>
+            <li><a href='Servicios.html'>SERVICIOS</a> </li>
+            <li><a href='Catalogo.html'>GALERÍA</a></li>
+            <li><a href='Contacto.html'>CONTACTO</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article>
+            <h1>
+                Estantería Martínez S.A. de C.V.
+            </h1>
+            <p>
+               <img class="imagenytexto"src="{% static '/recursos/logo.jpg' %}" alt=""> <p class="textoyimagen">Teniendo más de 5 años Fabricando y Diseñando estanterías, lockers, muebles de oficina, cajas de plásticos y soluciones completas de organización de espacio que han permitido que tenga el <mark>ambiente y diseño</mark> vanguardista, que lo distingue ante sus clientes.Permítanos presentarle Nuevas Propuestas y Productos que harán de su Oficina un lugar mas moderno, a un bajo costo. Acceda a nuestra Área de Contáctanos y proporcione sus datos, con Gusto nos comunicaremos con ustedes.
+                En Estantería Martínez nos esforzamos por brindar a nuestros clientes mas que solo un mueble de Oficina, ofrecemos un servicio completo de Reparacion, Asesoria de Espacios y equipos y ventas de accesorios para todos sus muebles, para que siempre tenga todo su mobiliario en buenas condiciones. Llame a nuestros asesores o envíenos su información, con gusto nos pondremos en contacto con usted para poder darle la solución a su espacio o equipo, para que su oficina siempre sea confortable.</p>
+            </p>
+            <br>
+
+            <h2>Misión</h2>
+            <p>Satisfacer de manera rápida las necesidades de nuestros clientes y así mismo a un precio justo con la única intención de obtener la satisfacción del cliente.</p>
+            
+            <h2>Visión</h2>
+            <p>
+                Tratar de estar siempre a la vanguardia en el equipamiento de muebles de oficina e ir agregando las innovaciónes que surgan sin incrementar el precio.
+            </p>
+        </article>
+        <br> <br>
+        <a class = "irhaciaarriba" href='#irarriba' >Ir arriba</a> <br> <br>
+    </main> <br>
+
+    <!-- ASIDE -->
+    <aside>
+        <h6>ADMINISTRACIÓN</h6> <br>
+        <a href='http://127.0.0.1:8000/admin/'>
+                <img class = "imagen2" src="{% static '/recursos/admin.png' %}" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br> <hr> <br>
+
+        <h5>BUSCADOR</h5>
+        <br>
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+    </aside>
+
+    <!-- PIE -->
+    <footer>
+        <address>
+            <p>Dirección: Ciudad Universitaria, San Nicolas de los Garza</p>
+        </address>
+        <p>
+            <strong>Estantería Martínez, derechos reservados. ®</strong>
+        </p>
+    </footer>
+</body>
+</html>

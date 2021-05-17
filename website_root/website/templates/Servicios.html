@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIOS - Estantería Martínez</title>
+    <link rel="stylesheet" href="{% static 'css/miestilo.css' %}">
+    <link rel="icon" type="image/png" href="{% static '/recursos/logo.jpg' %}">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id = "irarriba">
+        <div class="imagencontenedor">
+            <img class="crop" src= "{% static 'recursos/estante.jpg' %}"/>
+        </div> <br>
+        <nav>
+        <ul class="clrarfix">
+            <li class="nombre" >
+                Estantería Martínez
+            </li>
+            <li><a href='Quienes_somos.html'>INICIO</a></li>
+            <li><a href='Catalogo.html'>GALERÍA</a></li>
+            <li><a href='Contacto.html'>CONTACTO</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article>
+            <h1> Estanterías </h1>
+            <p>
+                ESTANTERÍA METÁLICA
+                ESTANTERÍA DE CARGA LIGERA:
+                Estantería para almacenaje de una gran diversidad de productos para comercio, oficinas, talleres, refaccionarias, farmacias, hospitales, para control de carpetas y cajas de archivo, etc.
+
+                ESTANTERÍA DE CARGA MEDIA:
+                Estantería para almacenaje de una gran diversidad de materiales, refacciones y herramientas de talleres industriales, talleres de mantenimiento, hangares, etc.
+
+                ESTANTERÍA ESPECIAL:
+                Estantería modulada y calibrada con medidas especiales y resistencia de carga en base a sus requerimientos específicos de espacio, peso y volumen.
+
+                Manufacturada con lámina rolada decapada SAE1010, bajo normas internacionales de calidad y estructuradas a base de ángulos ranurados y entrepaños lisos con refuerzo, o con ángulos ranurados de mayor desarrollo estructural con entrepaños de panel metálico. Acabado anticorrosivo termo pintado de óptima apariencia y durabilidad. Colores de línea azul, naranja, gris martillado o combinados.
+            </p>
+            
+            <h2> Lockers </h2>
+                <p>
+                    LOCKERS METÁLICOS:
+                    Para resguardo de artículos personales en comercios, fábricas, escuelas, hospitales, clubes deportivos, oficinas, etc. Por sus dimensiones el más funcional en el mercado para los artículos que generalmente portan todo tipo de personas como  obreros, oficinistas, viajeros, deportistas, estudiantes, profesores, etc.
+
+                    Sólida manufactura con lámina rolada decapada SAE1010, bajo normas internacionales de calidad. Excelente equilibrio y rigidez estructural. Ensamblados con micro soldadura de alambre (sin tornillos y remaches). Con resistentes puertas reforzadas con ventilación, porta código de usuario, con bisagras tipo barril para uso rudo, y con opción de cierre con portacandado o chapa. Acabado anticorrosivo termo pintado de óptima apariencia y durabilidad. Colores de línea gris martillado o avellana. También a su elección.
+                </p> <br>
+    
+            <h3> Armado y Desarmado </h3> <br>
+            <p>
+                Contamos con el servicio de armado y desarmado para reconfiguraciones o cambio de bodegas.
+            </p> <br>
+            <hr>
+            <br>
+            <h4 class="centrar">GARANTÍA</h4> <br>
+            <p>
+                Garantía por escrito y por un periodo de 3 años en defectos de fabricación que sólo un producto bien diseñado y bien manufacturado le puede ofrecer.
+            </p>
+        </article>
+
+        <br> <br>
+        <a class = "irhaciaarriba" href='#irarriba'>Ir arriba</a> <br> <br>
+    </main> <br>
+
+    <!-- ASIDE -->
+    <aside>
+        <h6>ADMINISTRACIÓN</h6> <br>
+        <a href='http://127.0.0.1:8000/admin/'>
+                <img class = "imagen2" src="{% static '/recursos/admin.png' %}" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br> <hr> <br>
+
+        <h5>BUSCADOR</h5>
+        <br>
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+    </aside>
+
+    <!-- PIE -->
+    <footer>
+        <address>
+            <p>Dirección: Ciudad Universitaria, San Nicolas de los Garza</p>
+        </address>
+        <p>
+            <strong>Estantería Martínez, derechos reservados. ®</strong>
+        </p>
+    </footer>
+</body>
+</html>

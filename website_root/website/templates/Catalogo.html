@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERÍA - Estantería Martínez</title>
+    <link rel="stylesheet" href="{% static 'css/miestilo.css' %}">
+    <link rel="icon" type="image/png" href="{% static '/recursos/logo.jpg' %}">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id = "irarriba">
+        <div class="imagencontenedor">
+            <img class="crop" src= "{% static 'recursos/estante.jpg' %}"/>
+        </div> <br>
+        <nav>
+        <ul class="clrarfix">
+            <li class="nombre" >
+                Estantería Martínez
+            </li>
+            <li><a href='Quienes_somos.html'>INICIO</a> </li>
+            <li><a href='Servicios.html'>SERVICIOS</a></li>
+            <li><a href='Contacto.html'>CONTACTO</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article class="catalogoclase">
+            <h1>Artículos</h1>
+
+            <div class="contenedordeimagenes">
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/estanteria_madera.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Estantería de Madera</h3> <br>
+                        <p>Estanteria hecha a la medida para el hogar o para la oficina.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/estanteria_metalica.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Estantería de Metal</h3> <br>
+                        <p>Estanteria metalica para el área de trabajo rudo.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/estanteria_madera_metal.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Estantería de Madera y Metal</h3> <br>
+                        <p>Estanteria con material de madera y de metal muy resistente.</p>
+                    </div>
+                </div>
+
+                <div class="elitem">
+                    <img src="{% static '/recursos/caja_plastica_chica.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Caja plastica chica</h3> <br>
+                        <p>Caja tipo organizadora chica.</p>
+                    </div>
+                </div>
+
+                <div class="elitem">
+                    <img src="{% static '/recursos/caja_plastica_mediana.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Caja plastica mediana</h3> <br>
+                        <p>Caja de plastico con gran tamaño para guardado de articulos.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/caja_plastica_grande.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Caja plastica grande</h3> <br>
+                        <p>Caja grande con el suficiente tamaño para guardar articulos.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/locker_madera.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Locker de madera</h3> <br>
+                        <p>Locker de madera resistente para guardar articulos con el espacio ideal.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/locker_metalico.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Locker de metalico</h3> <br>
+                        <p>Locker metalico resistente con espacio suficiente para articulos.</p>
+                    </div>
+                </div>
+
+                <div class="elitem">
+                    <img src="{% static '/recursos/locker_plastico.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Locker de plastico</h3> <br>
+                        <p>Locker de plastico con gran espacio para guardar articulos.</p>
+                    </div>
+                </div>
+
+                <div class="elitem">
+                    <img src="{% static '/recursos/lampara.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Lampara</h3> <br>
+                        <p>Lámpara con largo alcance para oficina.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br> <br>
+                    <img src="{% static '/recursos/silla.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Silla</h3> <br>
+                        <p>Silla resistente para oficina.</p>
+                    </div>
+                </div>
+
+                <div class="elitem"> <br>
+                    <img src="{% static '/recursos/escritorio.jpg' %}" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Escritorio</h3> <br>
+                        <p>Escritorio resistente para oficina.</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <br> <br>
+        <a class = "irhaciaarriba" href='#irarriba'>Ir arriba</a> <br> <br>
+    </main> <br>
+
+    <!-- ASIDE -->
+    <aside>
+        <h6>ADMINISTRACIÓN</h6> <br>
+        <a href='http://127.0.0.1:8000/admin/'>
+                <img class = "imagen2" src="{% static '/recursos/admin.png' %}" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br> <hr> <br>
+
+        <h5>BUSCADOR</h5>
+        <br>
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+    </aside>
+
+    <!-- PIE -->
+    <footer>
+        <address>
+            <p>Dirección: Ciudad Universitaria, San Nicolas de los Garza</p>
+        </address>
+        <p>
+            <strong>Estantería Martínez, derechos reservados. ®</strong>
+        </p>
+    </footer>
+</body>
+</html>

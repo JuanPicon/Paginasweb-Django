@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO - Estantería Martínez</title>
+    <link rel="stylesheet" href="{% static 'css/miestilo.css' %}">
+    <link rel="icon" type="image/png" href="{% static '/recursos/logo.jpg' %}">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id = "irarriba">
+        <div class="imagencontenedor">
+            <img class="crop" src= "{% static 'recursos/estante.jpg' %}"/>
+        </div> <br>
+        <nav>
+        <ul class="clrarfix">
+            <li class="nombre" >
+                Estantería Martínez
+            </li>
+            <li><a href='Quienes_somos.html'>INICIO</a> </li>
+            <li><a href='Servicios.html'>SERVICIOS</a></li>
+            <li><a href='Catalogo.html'>GALERÍA</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article>
+            <h1 class="contactodenumero">CONTACTO TELEFÓNICO
+            <div>
+            <a class="tel" href="#">+52 8185262895</a>
+            </div>
+            </h1>
+            
+            <h2>HORARIOS DE ATENCIÓN</h2>
+            <div id="main-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th><th>Hora Inicio</th><th>Hora Final</th>
+                        </tr>
+                    </thead>
+        
+                    <tr>
+                        <td>Lunes</td><td>9 am</td><td>6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td><td>9 am</td><td>6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Miercolés</td><td>9 am</td><td>6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td><td>9 am</td><td>6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td><td>9 am</td><td>6pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td><td>10 am</td><td>5 pm</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Enviar dudas o consultas</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="text" name="duda o consulta" id="dudasconsultas" placeholder="Escriba su duda o consulta">
+            <p>Estoy de acuerdo con <a href='https://policies.google.com/terms?hl=es' target="_blank">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Enviar" onClick="alert('Su información a sido registrada, porfavor verificar la bandeja de entrada de su correo electrónico.')"> <br> <br>
+            <p><a href='https://listado.mercadolibre.com.mx/estanterias#D[A:estanterias]' target="_blank">No se han contactado con usted?</a></p>
+        </article>
+        <br> <br>
+        <a class = "irhaciaarriba" href='#irarriba'>Ir arriba</a> <br> <br>
+    </main> <br>
+
+    <!-- ASIDE -->
+    <aside>
+        <h6>ADMINISTRACIÓN</h6> <br>
+        <a href='http://127.0.0.1:8000/admin/'>
+                <img class = "imagen2" src="{% static '/recursos/admin.png' %}" alt="">
+        </a>
+        <br>
+        <br>
+        <br>
+        <br> <hr> <br>
+
+        <h5>BUSCADOR</h5>
+        <br>
+        <input type="search" id="input-search" placeholder="Buscar aqui">
+    </aside>
+
+    <!-- PIE -->
+    <footer>
+        <address>
+            <p>Dirección: Ciudad Universitaria, San Nicolas de los Garza</p>
+        </address>
+        <p>
+            <strong>Estantería Martínez, derechos reservados. ®</strong>
+        </p>
+    </footer>
+</body>
+</html>
